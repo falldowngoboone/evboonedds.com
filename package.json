@@ -1,0 +1,9 @@
+{
+  "name": "evboonedds-com",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:falldowngoboone/evboonedds-com.git",
+  "author": "Ryan Boone <falldowngoboone@gmail.com>",
+  "license": "none",
+  "private": true
+}
