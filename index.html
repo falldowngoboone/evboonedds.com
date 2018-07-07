@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E.V. Boone, DDS&thinsp;&mdash;&thinsp;Family Dentistry in Vidor, TX</title>
+
+  <!-- TODO: tailor this script via the API: https://polyfill.io/v2/docs/api -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>E.V. Boone, DDS</h1>
+  </header>
+  <p>Family dentistry in Vidor, TX.</p>
+  <footer>
+    &copy;
+    <span data-current-year>2018</span> E.V. Boone, DDS
+  </footer>
+</body>
+
+<script>
+  (function () {
+    var currentYearContainer = document.querySelector('[data-current-year]')
+    if (currentYearContainer) {
+      currentYearContainer.textContent = (new Date()).getFullYear()
+    }
+  })()
+</script>
+
+</html>
