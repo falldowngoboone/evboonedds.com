@@ -18,7 +18,7 @@ fse.emptyDirSync(distPath);
 // TODO: support custom page CSS
 fse.mkdirpSync(path.join(distPath, 'css'));
 
-glob('**/*.scss', { cwd: srcPath }).then(files => {
+glob('**/[!_]*.scss', { cwd: srcPath }).then(files => {
   files.forEach(file => {
     renderSass({ file: path.join(srcPath, file) }).then(sassData => {
       const name = path.basename(file, '.scss');
