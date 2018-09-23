@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{site.title}}&thinsp;&mdash;&thinsp;{{page.title}}{{^page.title}}{{site.description}}{{/page.title}}</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <header>
-    <h1>EV Boone DDS</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Your First Visit</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Patient Forms</a></li>
-        <li><a href="#">Request An Appointment</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main role="main">
+{{> header}}
     <div>
       Purpose Statement
     </div>
     <div>Testimonials</div>
     <div>Lifestyle Photos</div>
     <div>Latest Blog Post</div>
-  </main>
-  <footer>
-    Footer
-  </footer>
-</body>
-
-</html>
+{{> footer}}

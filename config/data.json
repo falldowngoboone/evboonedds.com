@@ -1,6 +1,14 @@
 {
   "site": {
     "title": "E.V. Boone, DDS",
-    "description": "Family Dentistry in Vidor, TX"
+    "description": "Family Dentistry in Vidor, TX",
+    "urls": {
+      "home": "/",
+      "appointments": "/appointments.html",
+      "firstVisit": "/first-visit.html",
+      "about": "/about.html",
+      "services": "/services.html",
+      "forms": "/forms.html"
+    }
   }
 }
