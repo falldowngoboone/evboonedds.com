@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{site.name}}&thinsp;&mdash;&thinsp;{{title}}{{^title}}{{site.description}}{{/title}}</title>
+  <meta name="description" content="{{description}}{{^description}}{{site.description}}{{/description}}" />
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -13,14 +14,9 @@
 <body>
   <a href="#main">Skip to main content</a>
   <header>
-  {{#title}}
-    <a href="/">{{site.name}}</a>
-  {{/title}}
-  {{^title}}
-    <h1><a href="/">{{site.name}}</a></h1>
-  {{/title}}
     <nav aria-label="primary">
       <ul>
+        <li><a href="/" aria-label="Home">{{site.name}}</a></li>
         <li><a href="/first-visit">Your First Visit</a></li>
         <li><a href="/about">About Us</a></li>
         <li><a href="/services">Services</a></li>
@@ -30,6 +26,4 @@
     </nav>
   </header>
   <main id="main" role="main">
-  {{#title}}
     <h1>{{title}}</h1>
-  {{/title}}
