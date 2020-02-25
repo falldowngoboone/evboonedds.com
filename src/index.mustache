@@ -4,6 +4,20 @@ title: Giving you confidence in every smile
 ---
 
 <div>Purpose Statement</div>
-<div>Testimonials</div>
+{{#testimonials.length}}
+<section>
+  <h2>Testimonials</h2>
+  <ul>
+  {{#testimonials}}
+    <li>
+      <blockquote>
+        <p>{{text}}</p>
+        <footer><cite>—{{source}}</cite></footer>
+      </blockquote>
+    </li>
+  {{/testimonials}}
+  </ul>
+</section>
+{{/testimonials.length}}
 <div>Lifestyle Photos</div>
-<div>Latest Blog Post</div>
+<div>Location</div>
