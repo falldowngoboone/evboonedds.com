@@ -1,0 +1,10 @@
+// fixing browser bugs and stuff
+
+// Safari removes the list role when you remove list style type; this fixes it.
+// See: https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/
+ul.primary-nav li:before,
+ol.primary-nav li:before {
+  $zero-width-space: '\200B';
+  content: $zero-width-space;
+  position: absolute;
+}

@@ -1,0 +1,16 @@
+@use "sass:list";
+@use "variables" as var;
+
+.m-auto {
+  margin: auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+@each $space in var.$spaces {
+  .m-#{list.index(var.$spaces, $space)} {
+    margin: $space;
+  }
+}

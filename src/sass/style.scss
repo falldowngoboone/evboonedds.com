@@ -1,8 +1,10 @@
-body {
-  font-family: Lato, sans-serif;
-}
+@use "variables";
 
-h1 {
-  font-family: Lora;
-  font-weight: 400;
-}
+@use "reset";
+@use "base";
+
+@use "margin";
+@use "padding";
+@use "a11y";
+@use "components";
+@use "hacks";

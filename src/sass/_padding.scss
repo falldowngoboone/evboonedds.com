@@ -1,0 +1,12 @@
+@use "sass:list";
+@use "variables" as var;
+
+.p-0 {
+  padding: 0;
+}
+
+@each $space in var.$spaces {
+  .p-#{list.index(var.$spaces, $space)} {
+    padding: $space;
+  }
+}

@@ -1,0 +1,16 @@
+@use "sass:list";
+@use "variables" as var;
+
+@function space($i: 1) {
+  @if $i < 1 {
+    @return list.nth(var.$spaces, 1);
+  }
+
+  $length: list.length(var.$spaces);
+
+  @if $i > $length {
+    @return list.nth(var.$spaces, $length);
+  }
+
+  @return list.nth(var.$spaces, $i);
+}
