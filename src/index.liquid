@@ -1,0 +1,46 @@
+---
+layout: layouts/default
+title: Quality Dental Health Care You Deserve
+---
+
+<p>
+  For over {{ business.yearsOpen }} years, we at Dr. E.V. Boone’s office in
+  Vidor, TX, have made patient well-being our top priority, providing
+  informative consultations, orthodontics, and a variety of cosmetic and general
+  dentistry in a comfortable, safe environment. We are committed to the highest
+  standards of dental care and work hard to ensure you and your family receive
+  the most modern techniques and advancements available.
+</p>
+
+<p>
+  Our state-of-the-art facility uses the highest quality materials and on-site
+  dental technology to give you great results quickly. We offer a full range of
+  dental healthcare and treatment options for all ages. At Dr. Boone’s, we
+  strive to provide a caring, courteous environment for our patients. We have an
+  experienced, friendly staff who are ready to give you the quality dental
+  health care you deserve.
+</p>
+
+{% if testimonials.length %}
+<section>
+  <h2>Testimonials</h2>
+  <ul>
+    {% for testimonial in testimonials %}
+    <li>
+      <blockquote>
+        <p>{{ testimonial.text }}</p>
+        <footer>
+          <cite>—{{ testimonial.source }}</cite>
+        </footer>
+      </blockquote>
+    </li>
+    {% endfor testimonials %}
+  </ul>
+</section>
+{% endif %}
+
+<div>Lifestyle Photos</div>
+
+<div>
+  {% include map %}
+</div>
