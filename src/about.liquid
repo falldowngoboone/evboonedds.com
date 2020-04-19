@@ -3,31 +3,22 @@ layout: layouts/default
 title: About Us
 ---
 
-<div>
-  <h2>Staff</h2>
+{% if staff.size > 0 %}
+<section aria-labelledby="staff">
+  <h2 id="staff">Staff</h2>
   <ul>
+    {% for emp in staff %}
     <li>
-      <h3>Dr. Boone</h3>
-      <div>Photo</div>
-      <p>Bio</p>
+      <h3>{{ emp.name }}</h3>
+      {% unless emp.img.src == blank %}
+      <img src="{{ emp.img.src }}" alt="{{ emp.img.alt }}" />
+      {% endunless %} {{ emp.bio }}
     </li>
-    <li>
-      <h3>Hygienist 1</h3>
-      <div>Photo</div>
-      <p>Bio</p>
-    </li>
-    <li>
-      <h3>Hygienist 2</h3>
-      <div>Photo</div>
-      <p>Bio</p>
-    </li>
-    <li>
-      <h3>Office Manager</h3>
-      <div>Photo</div>
-      <p>Bio</p>
-    </li>
+    {% endfor %}
   </ul>
-</div>
+</section>
+{% endif %}
+
 <div>
   <h2>Our Facility</h2>
   <ul>

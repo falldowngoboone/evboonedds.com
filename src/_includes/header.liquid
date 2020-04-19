@@ -1,39 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>
-    {{ site.name }}&thinsp;&mdash;&thinsp;{{ title | default: site.description
-    }}
-  </title>
-  <meta
-    name="description"
-    content="{{ description | default: site.description }}"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Yanone+Kaffeesatz:wght@700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="/css/style.css" />
-</head>
-
-<body>
-  <header>
-    <a class="show-on-focus link-block" href="#main">Skip to main content</a>
-    <nav aria-label="primary">
-      <ul class="primary-nav">
-        <li>
-          <a class="link-block" href="/" aria-label="Home"><img src="/images/ev-boone-dds-logo.svg" alt=""></a>
-        </li>
-        <li><a class="link-block" href="/first-visit">Your First Visit</a></li>
-        <li><a class="link-block" href="/about">About Us</a></li>
-        <li><a class="link-block" href="/services">Services</a></li>
-        <li><a class="link-block" href="/forms">Patient Forms</a></li>
-        <li><a class="link-block" href="/appointments">Request An Appointment</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main id="main" role="main">
-    <h1>{{ title | default: site.description }}</h1>
+<header>
+  <a class="show-on-focus link-block" href="#main">Skip to main content</a>
+  <nav aria-label="primary">
+    <ul class="primary-nav">
+      <li>
+        <a class="link-block" href="/" aria-label="Home"
+          ><img src="/images/ev-boone-dds-logo.svg" alt=""
+        /></a>
+      </li>
+      <li><a class="link-block" href="/first-visit">Your First Visit</a></li>
+      <li><a class="link-block" href="/about">About Us</a></li>
+      <li><a class="link-block" href="/services">Services</a></li>
+      <li><a class="link-block" href="/forms">Patient Forms</a></li>
+      <li>
+        <a class="link-block" href="/appointments">Request An Appointment</a>
+      </li>
+    </ul>
+  </nav>
+</header>

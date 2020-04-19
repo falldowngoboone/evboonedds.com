@@ -9,7 +9,7 @@ module.exports = {
     postalCode: '77662',
   },
   maps: {
-    key: 'AIzaSyCLTTST-24CXQPck0T9oe2ALMfyCfTHS4I',
+    key: process.env.GOOGLE_MAPS_API_KEY,
     query: 'Boone+Eugene+V+DDS',
     center: '30.137678,-94.0162132',
   },
