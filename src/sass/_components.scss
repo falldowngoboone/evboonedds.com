@@ -1,9 +1,13 @@
 @use "functions" as fn;
 
-.link-block {
+@mixin block-link-defaults {
   padding: fn.space(3);
   display: block;
   text-decoration: none;
+}
+
+.link-block {
+  @include block-link-defaults;
 }
 
 .map {
@@ -12,12 +16,24 @@
 }
 
 .primary-nav {
-  padding: 0;
-  list-style: none;
   display: flex;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: fn.space(3);
+  padding-right: fn.space(3);
 
-  & > * {
-    flex-shrink: 0;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    @include block-link-defaults;
+  }
+
+  &__link--home {
+    margin-right: auto;
   }
 }
